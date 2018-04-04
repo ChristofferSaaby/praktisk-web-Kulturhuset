@@ -1,3 +1,3 @@
 module.exports = function (app) {
-    //require('./')(app);
+    require('./hjem')(app);
 };
