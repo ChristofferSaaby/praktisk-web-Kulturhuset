@@ -6,12 +6,11 @@ document.addEventListener ("DOMContentLoaded", function (event) {
                 return response.json();
          })
             .then((data) => {
-                console.log(data);
-
+                //console.log(data);
+                let allevents = [];
                 data.forEach((eventDB, i) => {
-                    let allevents = [];
+                    allevents.push(eventDB);
                     let eventObject = new events(eventDB.title, eventDB.fk_type, eventDB.dato_tid, eventDB.varighed, eventDB.fk_sted, eventDB.fk_sal, eventDB.pris);
-                    allevents.push(eventObject);
         })
     })
 })

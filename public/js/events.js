@@ -11,7 +11,6 @@ class events {
         this.showEvent();
     }
     showEvent() {
-        document.querySelectorAll("h4")[i].innerHTML = this.title;
-
+        document.querySelectorAll("h4")[this.i].innerHTML = this.title;
     }
 }
