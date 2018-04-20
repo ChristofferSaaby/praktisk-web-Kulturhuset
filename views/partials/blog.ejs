@@ -5,6 +5,14 @@
     </div>
         <div class="top">
         </div>
+        <ul class="clearfix">
+                <li class="active"><a href="arrangementer/1">Film</li>
+                <li><a href="arrangementer/2">Foredrag</a></li> 
+                <li><a href="arrangementer/3">Koncerter</a></li> 
+                <li><a href="arrangementer/4">Teater</a></li> 
+                <li><a href="arrangementer/5">Udstilling</a></li>
+                <div class="clear"></div>
+            </ul>
         <section>
             <ul class="lb-album">
                  <div class="m_desc1">
@@ -17,14 +25,14 @@
                                  <%- `<p>Kategori: ${ar.type}</p>` %>
                                  <%- `<p>Sted: ${ar.sal}</p>` %>
                                  <%- `<p>Pris: ${ar.pris}</p>` %>
+                                 <button class="button-info read-more">Køb</button>
                                  <% });
                                  %>
+                                 
                      </li>
                 <div class="clear"></div>
             </ul>
         </section>
-
-            <button class="button-info read-more">Read More</button>
              
           </div>
         

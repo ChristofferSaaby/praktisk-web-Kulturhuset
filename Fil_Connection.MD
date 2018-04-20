@@ -24,3 +24,7 @@ routes/arrangementer (linje 2-23)
 */udtræk af arrangementer efter kategori*/
 
 Følgende filer hænger sammen med udtræk af arrengementer fra databasen sorteret efter kategori
+
+views/partials/blog (linje 8-15)
+api/api (linje 13-24)
+routes/arrangementer (linje 26-37)

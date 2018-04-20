@@ -11,12 +11,12 @@ module.exports = (app) => {
         });
     });
     app.get('/api/allEvents/:typer', function(req, res) {
-        var sql = `SELECT * FROM arrangementer WHERE fk_type = ${req.params.type}`
+        var sql = `SELECT * FROM arrangementer WHERE fk_type = ${req.params.typer}`
         db.query(sql, function (err, results) {
             if (err) {
                 console.log(err);
             } else {
-                // console.log(results);
+                console.log(results);
             }
             res.send(results);
         });
