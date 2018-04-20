@@ -5,7 +5,7 @@ const path = require('path');
 const session = require('express-session');
 const bodyParser = require("body-parser");
 
-require("./api/config/sql");
+require("./config/sql");
 
 app.set('view engine', 'ejs');
 app.set('port', port);
@@ -21,7 +21,7 @@ app.use(session({
 }));
 
 
-require('./api/routes/overview')(app);
+require('./routes/overview')(app);
 require('./api/api')(app);
 
 app.listen(port);
