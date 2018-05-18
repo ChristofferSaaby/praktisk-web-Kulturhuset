@@ -18,12 +18,12 @@
                  <div class="m_desc1">
                      <li>
                          <%
-                            arrangement.forEach( (ar)=> { %>
+                         allArrangementer.forEach( (ar)=> { %>
                                  <%- `<p>${ar.title}</p>` %>
-                                 <%- `<p>Dato: ${ar.dato_tid}</p>` %>
+                                 <%- `<p>Dato: ${ar.dato}</p>` %>
                                  <%- `<p>Varighed: ${ar.varighed}</p>` %>
-                                 <%- `<p>Kategori: ${ar.type}</p>` %>
-                                 <%- `<p>Sted: ${ar.sal}</p>` %>
+                                 <%- `<p>Kategori: ${ar.kategori}</p>` %>
+                                 <%- `<p>Sted: ${ar.sted}</p>` %>
                                  <%- `<p>Pris: ${ar.pris}</p>` %>
                                  <button class="button-info read-more">Køb</button>
                                  <% });

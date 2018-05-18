@@ -1,3 +1,4 @@
+var mongo = require('mongodb');
 var express = require('express');
 var app = express();
 const port = 3000
@@ -5,7 +6,8 @@ const path = require('path');
 const session = require('express-session');
 const bodyParser = require("body-parser");
 
-require("./config/sql");
+require("mongodb");
+
 
 app.set('view engine', 'ejs');
 app.set('port', port);

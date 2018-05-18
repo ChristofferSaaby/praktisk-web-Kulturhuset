@@ -45,7 +45,7 @@ fetch(`http://localhost:3000/api/allEvents/:${urlparametre.type}`)
         html += `
         <div class="box">
             <h4>${arrangementer.title}</h4>
-            <p>${arrangementer.dato_tid}</p>
+            <p>${arrangementer.dato}</p>
             <p>${arrangementer.varighed}</p>
             <p>${arrangementer.type}</p>
             <p>${arrangementer.sal}</p>
@@ -83,7 +83,7 @@ fetch(`http://localhost:3000/api/allEvents`)
      html += `
         <div class="box">
             <h4>${arrangementer.title}</h4>
-            <p>${arrangementer.dato_tid}</p>
+            <p>${arrangementer.dato}</p>
             <p>${arrangementer.varighed}</p>
             <p>${arrangementer.type}</p>
             <p>${arrangementer.sal}</p>
